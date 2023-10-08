@@ -1,6 +1,7 @@
 import 'package:e_commers_project/utils/constant.dart';
 import 'package:e_commers_project/utils/custom_widget.dart';
 import 'package:e_commers_project/utils/image.dart';
+import 'package:e_commers_project/view/check_out_screen.dart';
 import 'package:e_commers_project/view/components/add_item_widget.dart';
 import 'package:e_commers_project/view/components/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -12,18 +13,26 @@ class MyBagScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
         child: SingleChildScrollView(
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Row(
               children: [Spacer(), CustomIcon(icon: Icons.search)],
             ),
-            CustomTextWidget(
-              text: 'My Bag',
-              fontfamily: 'Bold',
-              fontSize: 40,
-              fontWeight: FontWeight.bold,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: ((context) => CheckoutScreen())));
+              },
+              child: CustomTextWidget(
+                text: 'My Bag',
+                fontfamily: 'Bold',
+                fontSize: 40.0,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             BagAddItem(
               ftext: 'T Shirt',
@@ -53,7 +62,7 @@ class MyBagScreen extends StatelessWidget {
               image: sandos,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: CustomContainerWidget(
                 child: Row(
                   children: [
@@ -66,7 +75,7 @@ class MyBagScreen extends StatelessWidget {
                       onTap: () {
                         showModalBottomSheet(
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.0),
                           ),
                           context: context,
                           builder: (BuildContext context) {
@@ -80,7 +89,7 @@ class MyBagScreen extends StatelessWidget {
                                     children: [
                                       Padding(
                                         padding: const EdgeInsets.symmetric(
-                                            horizontal: 20, vertical: 10),
+                                            horizontal: 20.0, vertical: 10.0),
                                         child: CustomContainerWidget(
                                           child: Row(
                                             children: [
@@ -94,24 +103,24 @@ class MyBagScreen extends StatelessWidget {
                                                 child: CustomIcon(
                                                   icon: Icons.arrow_forward,
                                                   color: MyColors.white,
-                                                  Size: 14,
+                                                  Size: 14.0,
                                                 ),
                                               )
                                             ],
                                           ),
-                                          height: 40,
+                                          height: 40.0,
                                           width:
                                               MediaQuery.of(context).size.width,
                                           color: MyColors.white,
                                           bcolor: MyColors.white,
-                                          circular: 10,
+                                          circular: 10.0,
                                         ),
                                       ),
                                       CustomTextWidget(
                                         text: ' Your promo code',
                                         color: MyColors.black,
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 17,
+                                        fontSize: 17.0,
                                       ),
                                       ItemSeasonCard(
                                         utext: 'Summar Sale',
@@ -144,21 +153,22 @@ class MyBagScreen extends StatelessWidget {
                         child: CustomIcon(
                           icon: Icons.arrow_forward,
                           color: MyColors.white,
-                          Size: 14,
+                          Size: 14.0,
                         ),
                       ),
                     )
                   ],
                 ),
-                height: 40,
+                height: 40.0,
                 width: MediaQuery.of(context).size.width,
                 color: MyColors.white,
                 bcolor: MyColors.white,
-                circular: 10,
+                circular: 10.0,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               child: Row(
                 children: [
                   CustomTextWidget(
@@ -182,11 +192,12 @@ class MyBagScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -214,38 +225,39 @@ class MyBagScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 3.0, horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shoping',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.red,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

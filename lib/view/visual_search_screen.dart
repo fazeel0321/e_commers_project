@@ -1,6 +1,7 @@
 import 'package:e_commers_project/utils/constant.dart';
 import 'package:e_commers_project/utils/custom_widget.dart';
 import 'package:e_commers_project/utils/image.dart';
+import 'package:e_commers_project/view/camera_screen.dart';
 import 'package:e_commers_project/view/components/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,9 @@ class VisualScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               icon: Icon(
                 Icons.arrow_back_ios,
                 color: MyColors.black,
@@ -36,13 +39,13 @@ class VisualScreen extends StatelessWidget {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 50,
+                    height: 50.0,
                   ),
                   CustomTextWidget(
                     text:
                         'Search of an outfit by taking a photo uploading an image',
                     color: MyColors.white,
-                    fontSize: 30,
+                    fontSize: 30.0,
                     fontWeight: FontWeight.bold,
                     fontfamily: 'Bold',
                   ),
@@ -51,12 +54,20 @@ class VisualScreen extends StatelessWidget {
                     width: MediaQuery.of(context).size.width,
                     bcolor: MyColors.white,
                   ),
-                  CustomButton(
-                    padv: 0,
-                    text: 'Upload an image',
-                    color: MyColors.black.withOpacity(0.5),
-                    bcolor: MyColors.white,
-                    width: MediaQuery.of(context).size.width,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => CameraScreen())));
+                    },
+                    child: CustomButton(
+                      padv: 0.0,
+                      text: 'Upload an image',
+                      color: MyColors.black.withOpacity(0.5),
+                      bcolor: MyColors.white,
+                      width: MediaQuery.of(context).size.width,
+                    ),
                   )
                 ],
               ),

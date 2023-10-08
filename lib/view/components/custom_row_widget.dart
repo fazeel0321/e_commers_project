@@ -18,13 +18,13 @@ class MyRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomContainerWidget(
-        height: 30,
+        height: 30.0,
         width: MediaQuery.of(context).size.width,
-        circular: 0,
+        circular: 0.0,
         color: Color.fromARGB(255, 247, 250, 252),
         bcolor: Color.fromARGB(255, 230, 246, 255),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -62,7 +62,7 @@ class BrandRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
       child: Row(
         children: [
           CustomTextWidget(
@@ -74,14 +74,14 @@ class BrandRow extends StatelessWidget {
             child: Center(
                 child: Icon(
               Icons.done,
-              size: 12,
+              size: 12.0,
               color: MyColors.white,
             )),
             color: Ccolor,
             bcolor: bcolor,
-            circular: 5,
-            height: 20,
-            width: 20,
+            circular: 5.0,
+            height: 20.0,
+            width: 20.0,
           ),
         ],
       ),

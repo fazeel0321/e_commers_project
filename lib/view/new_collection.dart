@@ -18,11 +18,11 @@ class NewCollection extends StatelessWidget {
                   color: MyColors.black.withOpacity(0.5),
                   child: CustomImageContainer(
                     imageUrl: girl,
-                    height: 300,
+                    height: 300.0,
                     width: MediaQuery.of(context).size.width,
                     fit: BoxFit.cover,
                     child: Padding(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
@@ -30,7 +30,7 @@ class NewCollection extends StatelessWidget {
                           CustomTextWidget(
                             text: 'New Collection',
                             fontfamily: 'Bold',
-                            fontSize: 30,
+                            fontSize: 30.0,
                             color: MyColors.white,
                           ),
                         ],
@@ -45,14 +45,14 @@ class NewCollection extends StatelessWidget {
                 Column(
                   children: [
                     CustomImageContainer(
-                      height: 200,
-                      width: MediaQuery.of(context).size.width / 2,
+                      height: 200.0,
+                      width: MediaQuery.of(context).size.width / 2.0,
                       imageUrl: white,
                       child: Center(
                         child: CustomTextWidget(
                           text: 'Summar Sale',
                           fontfamily: 'Bold',
-                          fontSize: 30,
+                          fontSize: 30.0,
                           color: MyColors.red,
                         ),
                       ),
@@ -60,15 +60,15 @@ class NewCollection extends StatelessWidget {
                     Container(
                       color: MyColors.black.withOpacity(0.5),
                       child: CustomImageContainer(
-                        height: 200,
-                        width: MediaQuery.of(context).size.width / 2,
+                        height: 200.0,
+                        width: MediaQuery.of(context).size.width / 2.0,
                         imageUrl: black,
                         fit: BoxFit.cover,
                         child: Center(
                           child: CustomTextWidget(
                             text: 'Black',
                             fontfamily: 'Bold',
-                            fontSize: 30,
+                            fontSize: 30.0,
                             color: MyColors.white,
                           ),
                         ),
@@ -81,8 +81,8 @@ class NewCollection extends StatelessWidget {
                     Container(
                       color: MyColors.black.withOpacity(0.5),
                       child: CustomImageContainer(
-                        height: 400,
-                        width: MediaQuery.of(context).size.width / 2,
+                        height: 400.0,
+                        width: MediaQuery.of(context).size.width / 2.0,
                         imageUrl: hoddies,
                         fit: BoxFit.cover,
                         child: Center(
@@ -91,7 +91,7 @@ class NewCollection extends StatelessWidget {
                               CustomTextWidget(
                                 text: 'Men,s Hoddies',
                                 fontfamily: 'Bold',
-                                fontSize: 30,
+                                fontSize: 30.0,
                                 color: MyColors.white,
                               ),
                             ],
@@ -107,11 +107,12 @@ class NewCollection extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -139,38 +140,39 @@ class NewCollection extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 3.0, horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shop',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

@@ -2,6 +2,7 @@ import 'package:e_commers_project/utils/constant.dart';
 import 'package:e_commers_project/utils/custom_widget.dart';
 
 import 'package:e_commers_project/view/components/custom_button.dart';
+import 'package:e_commers_project/view/success_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'components/add_details_widget.dart';
@@ -30,38 +31,44 @@ class AddingScreen extends StatelessWidget {
           children: [
             AddDetail2(
               text: 'Full Name',
-              hieght: 60,
+              hieght: 60.0,
             ),
             AddDetails(
               text: 'Address',
               text2: 'Bhatti Gate',
-              hieght: 80,
+              hieght: 80.0,
             ),
             AddDetails(
-              hieght: 80,
+              hieght: 80.0,
               text: 'City',
               text2: 'Lahore',
             ),
             AddDetails(
               text: 'State/Region',
-              hieght: 80,
+              hieght: 80.0,
               text2: 'Islam',
             ),
             AddDetails(
               text: 'Zip Code(Post Code)',
-              hieght: 80,
+              hieght: 80.0,
               text2: '54000',
             ),
             AddDetails(
               text: 'Country',
-              hieght: 80,
+              hieght: 80.0,
               text2: 'Pakistan',
               icon: Icons.arrow_forward_ios,
-              size: 12,
+              size: 12.0,
             ),
-            CustomButton(
-              text: 'Save Address',
-              width: MediaQuery.of(context).size.width,
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => SuccessScreen())));
+              },
+              child: CustomButton(
+                text: 'Save Address',
+                width: MediaQuery.of(context).size.width,
+              ),
             )
           ],
         ),

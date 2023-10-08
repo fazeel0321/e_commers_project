@@ -1,5 +1,11 @@
+import 'package:e_commers_project/view/categories_screen.dart';
 import 'package:e_commers_project/view/components/add_item_widget.dart';
 import 'package:e_commers_project/view/components/custom_button.dart';
+import 'package:e_commers_project/view/my_bag.dart';
+import 'package:e_commers_project/view/new_collection.dart';
+import 'package:e_commers_project/view/street_clothes_screen.dart';
+import 'package:e_commers_project/view/visual_search_screen.dart';
+import 'package:e_commers_project/view/women_tops_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -35,10 +41,10 @@ class FashionScreen extends StatelessWidget {
             child: CustomImageContainer(
               imageUrl: dress,
               fit: BoxFit.cover,
-              height: 400,
+              height: 400.0,
               width: MediaQuery.of(context).size.width,
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -46,12 +52,20 @@ class FashionScreen extends StatelessWidget {
                     CustomTextWidget(
                         text: 'Fashion Sale',
                         color: MyColors.white,
-                        fontSize: 40,
+                        fontSize: 40.0,
                         fontWeight: FontWeight.bold,
                         fontfamily: 'Bold'),
-                    CustomButton(
-                      text: 'Check',
-                      width: 100,
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) => VisualScreen())));
+                      },
+                      child: CustomButton(
+                        text: 'Check',
+                        width: 100.0,
+                      ),
                     ),
                   ],
                 ),
@@ -59,13 +73,13 @@ class FashionScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15.0),
             child: Row(
               children: [
                 CustomTextWidget(
                   text: 'New',
                   color: MyColors.black,
-                  fontSize: 30,
+                  fontSize: 30.0,
                   fontWeight: FontWeight.bold,
                   fontfamily: 'Medium',
                 ),
@@ -73,7 +87,7 @@ class FashionScreen extends StatelessWidget {
                 CustomTextWidget(
                   text: 'view all',
                   color: MyColors.grey,
-                  fontSize: 15,
+                  fontSize: 15.0,
                   fontWeight: FontWeight.w500,
                 ),
               ],
@@ -88,25 +102,25 @@ class FashionScreen extends StatelessWidget {
                   imageurl: weddingdress,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.0,
                 ),
                 ImageItemContainer(
                   imageurl: partydress,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.0,
                 ),
                 ImageItemContainer(
                   imageurl: hoddies,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.0,
                 ),
                 ImageItemContainer(
                   imageurl: image1,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.0,
                 ),
               ],
             ),
@@ -114,25 +128,62 @@ class FashionScreen extends StatelessWidget {
         ]),
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CustomIcon(
-                    icon: Icons.home,
-                    color: MyColors.red,
+                  InkWell(
+                    onDoubleTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => StreetClothesScreen())));
+                    },
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => NewCollection())));
+                    },
+                    child: CustomIcon(
+                      icon: Icons.home,
+                      color: MyColors.red,
+                    ),
                   ),
-                  CustomIcon(
-                    icon: Icons.shop_rounded,
-                    color: MyColors.grey,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => CategoriesScreen())));
+                    },
+                    onDoubleTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => WomenTopsScreen())));
+                    },
+                    child: CustomIcon(
+                      icon: Icons.shop_rounded,
+                      color: MyColors.grey,
+                    ),
                   ),
-                  CustomIcon(
-                    icon: Icons.shopping_bag,
-                    color: MyColors.grey,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => MyBagScreen())));
+                    },
+                    child: CustomIcon(
+                      icon: Icons.shopping_bag,
+                      color: MyColors.grey,
+                    ),
                   ),
                   CustomIcon(
                     icon: Icons.favorite_border,
@@ -146,38 +197,38 @@ class FashionScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.red,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shoping',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

@@ -44,52 +44,52 @@ class WomenSecondScreen extends StatelessWidget {
                     CustomButton(
                       text: 'T-Shirts',
                       color: MyColors.black,
-                      hieght: 30,
-                      width: 80,
+                      hieght: 30.0,
+                      width: 80.0,
                       bcolor: MyColors.black,
-                      padh: 5,
-                      padv: 10,
-                      fontsize: 12,
+                      padh: 5.0,
+                      padv: 10.0,
+                      fontsize: 12.0,
                     ),
                     CustomButton(
                       text: 'Crop Tops',
                       color: MyColors.black,
-                      hieght: 30,
-                      width: 80,
+                      hieght: 30.0,
+                      width: 80.0,
                       bcolor: MyColors.black,
-                      padh: 5,
-                      padv: 10,
-                      fontsize: 12,
+                      padh: 5.0,
+                      padv: 10.0,
+                      fontsize: 12.0,
                     ),
                     CustomButton(
                       text: 'Pullover',
                       color: MyColors.black,
-                      hieght: 30,
-                      width: 80,
+                      hieght: 30.0,
+                      width: 80.0,
                       bcolor: MyColors.black,
-                      padh: 5,
-                      padv: 10,
-                      fontsize: 12,
+                      padh: 5.0,
+                      padv: 10.0,
+                      fontsize: 12.0,
                     ),
                     CustomButton(
                       text: 'Blouse',
                       color: MyColors.black,
-                      hieght: 30,
-                      width: 80,
+                      hieght: 30.0,
+                      width: 80.0,
                       bcolor: MyColors.black,
-                      padh: 5,
-                      padv: 10,
-                      fontsize: 12,
+                      padh: 5.0,
+                      padv: 10.0,
+                      fontsize: 12.0,
                     ),
                     CustomButton(
                       text: 'Sleeveless',
                       color: MyColors.black,
-                      hieght: 30,
-                      width: 80,
+                      hieght: 30.0,
+                      width: 80.0,
                       bcolor: MyColors.black,
-                      padh: 5,
-                      padv: 10,
-                      fontsize: 12,
+                      padh: 5.0,
+                      padv: 10.0,
+                      fontsize: 12.0,
                     )
                   ],
                 )),
@@ -102,14 +102,14 @@ class WomenSecondScreen extends StatelessWidget {
                   context: context,
                   builder: (BuildContext context) {
                     return Container(
-                      height: 250,
+                      height: 250.0,
                       child: Center(
                         child: SingleChildScrollView(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
@@ -121,27 +121,27 @@ class WomenSecondScreen extends StatelessWidget {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10.0),
                                 child: CustomTextWidget(text: 'Popular'),
                               ),
                               Padding(
-                                padding: const EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10.0),
                                 child: CustomTextWidget(text: 'Newest'),
                               ),
                               Padding(
-                                padding: const EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10.0),
                                 child:
                                     CustomTextWidget(text: 'Customer Review'),
                               ),
                               CustomContainerWidget(
-                                  circular: 0,
+                                  circular: 0.0,
                                   color: MyColors.red,
                                   bcolor: MyColors.red,
-                                  height: 40,
+                                  height: 40.0,
                                   width: MediaQuery.of(context).size.width,
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 10),
+                                        horizontal: 10.0),
                                     child: Row(
                                       children: [
                                         CustomTextWidget(
@@ -152,7 +152,7 @@ class WomenSecondScreen extends StatelessWidget {
                                     ),
                                   )),
                               Padding(
-                                padding: const EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10.0),
                                 child: CustomTextWidget(
                                   text: 'Price: lowest to high',
                                 ),
@@ -174,7 +174,7 @@ class WomenSecondScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10.0),
               child: Row(
                 children: [
                   InkWell(
@@ -186,13 +186,13 @@ class WomenSecondScreen extends StatelessWidget {
                         context: context,
                         builder: (BuildContext context) {
                           return Container(
-                            height: 250,
+                            height: 250.0,
                             child: Center(
                               child: SingleChildScrollView(
                                   child: Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.all(10),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -205,7 +205,7 @@ class WomenSecondScreen extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.all(10),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
@@ -223,14 +223,14 @@ class WomenSecondScreen extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.all(10),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Row(
                                       children: [
                                         TextSizeButton(
                                           text: 'L',
                                         ),
                                         SizedBox(
-                                          width: 20,
+                                          width: 20.0,
                                         ),
                                         TextSizeButton(
                                           text: 'XL',
@@ -239,12 +239,12 @@ class WomenSecondScreen extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.all(10),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Row(
                                       children: [
                                         CustomTextWidget(
                                           text: 'Size info',
-                                          fontSize: 12,
+                                          fontSize: 12.0,
                                           color: MyColors.grey,
                                         ),
                                         Spacer(),
@@ -276,7 +276,7 @@ class WomenSecondScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: 15,
+                    width: 15.0,
                   ),
                   PriceRatingContainer(
                     price: '20\$',
@@ -290,7 +290,7 @@ class WomenSecondScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10.0),
               child: Row(
                 children: [
                   PriceRatingContainer(
@@ -302,7 +302,7 @@ class WomenSecondScreen extends StatelessWidget {
                     rate: '(10)',
                   ),
                   SizedBox(
-                    width: 15,
+                    width: 15.0,
                   ),
                   PriceRatingContainer(
                     price: '100\$',
@@ -319,11 +319,12 @@ class WomenSecondScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -351,38 +352,39 @@ class WomenSecondScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 3.0, horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shoping',
                     color: MyColors.red,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

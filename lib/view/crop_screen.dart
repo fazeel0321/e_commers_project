@@ -30,7 +30,7 @@ class CropScreen extends StatelessWidget {
           CustomImageContainer(
             imageUrl: girl2,
             fit: BoxFit.cover,
-            height: 550,
+            height: 550.0,
             width: MediaQuery.of(context).size.width,
           ),
           Padding(

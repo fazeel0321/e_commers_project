@@ -25,10 +25,10 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
               child: CustomImageContainer(
                 imageUrl: girl3,
                 fit: BoxFit.cover,
-                height: 200,
+                height: 200.0,
                 width: MediaQuery.of(context).size.width,
                 child: Padding(
-                  padding: const EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(15.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -36,7 +36,7 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
                       CustomTextWidget(
                         text: 'Street Clothes',
                         color: MyColors.white,
-                        fontSize: 40,
+                        fontSize: 40.0,
                         fontWeight: FontWeight.bold,
                         fontfamily: 'Bold',
                       ),
@@ -48,13 +48,13 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
           ],
         ),
         Padding(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.all(15.0),
           child: Row(
             children: [
               CustomTextWidget(
                 text: 'Sale',
                 color: MyColors.black,
-                fontSize: 30,
+                fontSize: 30.0,
                 fontWeight: FontWeight.bold,
                 fontfamily: 'Medium',
               ),
@@ -62,7 +62,7 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
               CustomTextWidget(
                 text: 'view all',
                 color: MyColors.grey,
-                fontSize: 15,
+                fontSize: 15.0,
                 fontWeight: FontWeight.w500,
               ),
             ],
@@ -74,7 +74,7 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               SizedBox(
-                width: 10,
+                width: 10.0,
               ),
               PriceRatingContainer(
                 price: '150\$',
@@ -85,18 +85,18 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
                 rate: '(10)',
               ),
               SizedBox(
-                width: 15,
+                width: 15.0,
               ),
               PriceRatingContainer(
                 price: '20\$',
-                discountprice: '15\$',
+                discountprice: '15.0\$',
                 text: 'Drothy perkins',
                 imageurl: tracksuit,
                 text1: 'Track Suit',
                 rate: '(10)',
               ),
               SizedBox(
-                width: 15,
+                width: 15.0,
               ),
               PriceRatingContainer(
                 price: '80\$',
@@ -107,7 +107,7 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
                 rate: '(10)',
               ),
               SizedBox(
-                width: 15,
+                width: 15.0,
               ),
               PriceRatingContainer(
                 price: '100\$',
@@ -118,18 +118,19 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
                 rate: '(10)',
               ),
               SizedBox(
-                width: 15,
+                width: 15.0,
               ),
             ],
           ),
         ),
       ]),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -165,38 +166,39 @@ class _StreetClothesScreenState extends State<StreetClothesScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 3.0, horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.red,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shoping',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

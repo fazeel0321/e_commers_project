@@ -27,12 +27,12 @@ class BrandScreen extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10.0),
             child: CustomTextField(
               htext: ' Search',
               ltext: 'Search',
               picon: Icon(Icons.search),
-              bcircular: 10,
+              bcircular: 10.0,
               bcolor: MyColors.grey,
             ),
           ),
@@ -78,19 +78,19 @@ class BrandScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Row(
           children: [
             CustomButton(
               text: 'Discard',
-              width: 150,
+              width: 150.0,
               color: MyColors.white,
               bcolor: MyColors.black,
               tcolor: MyColors.black,
             ),
             CustomButton(
               text: 'Apply',
-              width: 150,
+              width: 150.0,
             )
           ],
         ),

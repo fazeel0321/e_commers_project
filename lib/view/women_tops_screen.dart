@@ -3,6 +3,7 @@ import 'package:e_commers_project/utils/image.dart';
 import 'package:e_commers_project/view/components/add_item_widget.dart';
 import 'package:e_commers_project/view/components/custom_button.dart';
 import 'package:e_commers_project/view/components/custom_row_widget.dart';
+import 'package:e_commers_project/view/women_second_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/constant.dart';
@@ -16,7 +17,9 @@ class WomenTopsScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: Icon(
               Icons.arrow_back_ios,
               color: MyColors.black,
@@ -36,62 +39,70 @@ class WomenTopsScreen extends StatelessWidget {
             children: [
               CustomTextWidget(
                 text: 'Women,s tops',
-                fontSize: 40,
+                fontSize: 40.0,
                 fontfamily: 'Bold',
               ),
               SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      CustomButton(
-                        text: 'T-Shirts',
-                        color: MyColors.black,
-                        hieght: 30,
-                        width: 80,
-                        bcolor: MyColors.black,
-                        padh: 5,
-                        padv: 10,
-                        fontsize: 12,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) => WomenSecondScreen())));
+                        },
+                        child: CustomButton(
+                          text: 'T-Shirts',
+                          color: MyColors.black,
+                          hieght: 30.0,
+                          width: 80.0,
+                          bcolor: MyColors.black,
+                          padh: 5.0,
+                          padv: 10.0,
+                          fontsize: 12.0,
+                        ),
                       ),
                       CustomButton(
                         text: 'Crop Tops',
                         color: MyColors.black,
-                        hieght: 30,
-                        width: 80,
+                        hieght: 30.0,
+                        width: 80.0,
                         bcolor: MyColors.black,
-                        padh: 5,
-                        padv: 10,
-                        fontsize: 12,
+                        padh: 5.0,
+                        padv: 10.0,
+                        fontsize: 12.0,
                       ),
                       CustomButton(
                         text: 'Pullover',
                         color: MyColors.black,
-                        hieght: 30,
-                        width: 80,
+                        hieght: 30.0,
+                        width: 80.0,
                         bcolor: MyColors.black,
-                        padh: 5,
-                        padv: 10,
-                        fontsize: 12,
+                        padh: 5.0,
+                        padv: 10.0,
+                        fontsize: 12.0,
                       ),
                       CustomButton(
                         text: 'Blouse',
                         color: MyColors.black,
-                        hieght: 30,
-                        width: 80,
+                        hieght: 30.0,
+                        width: 80.0,
                         bcolor: MyColors.black,
-                        padh: 5,
-                        padv: 10,
-                        fontsize: 12,
+                        padh: 5.0,
+                        padv: 10.0,
+                        fontsize: 12.0,
                       ),
                       CustomButton(
                         text: 'Sleeveless',
                         color: MyColors.black,
-                        hieght: 30,
-                        width: 80,
+                        hieght: 30.0,
+                        width: 80.0,
                         bcolor: MyColors.black,
-                        padh: 5,
-                        padv: 10,
-                        fontsize: 12,
+                        padh: 5.0,
+                        padv: 10.0,
+                        fontsize: 12.0,
                       )
                     ],
                   )),
@@ -137,11 +148,12 @@ class WomenTopsScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -169,38 +181,39 @@ class WomenTopsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 3.0, horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shoping',
                     color: MyColors.red,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

@@ -28,67 +28,67 @@ class PaymentScreen extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10.0),
             child: CustomTextWidget(
               text: 'Your Payment Cards',
               fontWeight: FontWeight.bold,
             ),
           ),
           CustomImageContainer(
-            height: 200,
+            height: 200.0,
             width: MediaQuery.of(context).size.width,
             imageUrl: card,
           ),
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
                 CustomContainerWidget(
                   bcolor: MyColors.black,
-                  height: 20,
-                  width: 20,
+                  height: 20.0,
+                  width: 20.0,
                   color: MyColors.black,
-                  circular: 5,
+                  circular: 5.0,
                   child: Center(
                     child: CustomIcon(
                       icon: Icons.done,
-                      Size: 12,
+                      Size: 12.0,
                       color: MyColors.white,
                     ),
                   ),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.0,
                 ),
                 CustomTextWidget(text: 'Use as the shipping Adress'),
               ],
             ),
           ),
           CustomImageContainer(
-            height: 200,
+            height: 200.0,
             width: MediaQuery.of(context).size.width,
             imageUrl: card1,
           ),
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
                 CustomContainerWidget(
                   bcolor: MyColors.black,
-                  height: 20,
-                  width: 20,
+                  height: 20.0,
+                  width: 20.0,
                   color: MyColors.white,
-                  circular: 5,
+                  circular: 5.0,
                   child: Center(
                     child: CustomIcon(
                       icon: Icons.done,
-                      Size: 12,
+                      Size: 12.0,
                       color: MyColors.white,
                     ),
                   ),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.0,
                 ),
                 CustomTextWidget(text: 'Use as the shipping Adress'),
               ],
@@ -104,7 +104,7 @@ class PaymentScreen extends StatelessWidget {
                 context: context,
                 builder: (BuildContext context) {
                   return Container(
-                    height: 800,
+                    height: 800.0,
                     child: Center(
                       child: SingleChildScrollView(
                         child: Column(
@@ -114,20 +114,20 @@ class PaymentScreen extends StatelessWidget {
                             CustomTextWidget(
                               text: 'Add New Card',
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                              fontSize: 18.0,
                               fontfamily: 'Bold',
                             ),
                             AddDetail2(
                               text: 'Name On Card',
-                              hieght: 60,
+                              hieght: 60.0,
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 15, vertical: 10),
+                                  horizontal: 15.0, vertical: 10.0),
                               child: SingleChildScrollView(
                                 child: CustomContainerWidget(
                                   child: Padding(
-                                    padding: const EdgeInsets.all(10),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
@@ -135,7 +135,7 @@ class PaymentScreen extends StatelessWidget {
                                         CustomTextWidget(
                                           text: 'Card Number',
                                           color: MyColors.grey,
-                                          fontSize: 10,
+                                          fontSize: 10.0,
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(5),
@@ -144,13 +144,13 @@ class PaymentScreen extends StatelessWidget {
                                               CustomTextWidget(
                                                 text: '4566 5677 4563 7688',
                                                 color: MyColors.black,
-                                                fontSize: 10,
+                                                fontSize: 10.0,
                                               ),
                                               Spacer(),
                                               CustomImageContainer(
                                                 imageUrl: logo,
-                                                height: 30,
-                                                width: 30,
+                                                height: 30.0,
+                                                width: 30.0,
                                               )
                                             ],
                                           ),
@@ -158,48 +158,48 @@ class PaymentScreen extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  height: 80,
+                                  height: 80.0,
                                   width: MediaQuery.of(context).size.width,
                                   color: MyColors.white,
                                   bcolor: MyColors.white,
-                                  circular: 10,
+                                  circular: 10.0,
                                 ),
                               ),
                             ),
                             AddDetails(
                               text: 'Expire Date',
                               text2: '26/8',
-                              padh: 5,
-                              hieght: 80,
+                              padh: 5.0,
+                              hieght: 80.0,
                             ),
                             AddDetails(
                               text: 'CVV',
                               text2: '377',
-                              padh: 5,
-                              hieght: 80,
+                              padh: 5.0,
+                              hieght: 80.0,
                               icon: Icons.error,
-                              size: 15,
+                              size: 15.0,
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5.0),
                               child: Row(
                                 children: [
                                   CustomContainerWidget(
                                     bcolor: MyColors.black,
-                                    height: 20,
-                                    width: 20,
+                                    height: 20.0,
+                                    width: 20.0,
                                     color: MyColors.white,
-                                    circular: 5,
+                                    circular: 5.0,
                                     child: Center(
                                       child: CustomIcon(
                                         icon: Icons.done,
-                                        Size: 12,
+                                        Size: 12.0,
                                         color: MyColors.white,
                                       ),
                                     ),
                                   ),
                                   SizedBox(
-                                    width: 10,
+                                    width: 10.0,
                                   ),
                                   CustomTextWidget(
                                       text: 'Set a defualt payment method'),

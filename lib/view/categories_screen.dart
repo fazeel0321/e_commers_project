@@ -1,3 +1,4 @@
+import 'package:e_commers_project/view/categories_second_screen.dart';
 import 'package:e_commers_project/view/components/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +19,17 @@ class CategoriesScreen extends StatelessWidget {
               Icons.arrow_back_ios,
               color: MyColors.black,
             )),
-        title: CustomTextWidget(
-          text: 'Categories',
-          fontWeight: FontWeight.bold,
+        title: InkWell(
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: ((context) => CategoriesSecondScreen())));
+          },
+          child: CustomTextWidget(
+            text: 'Categories',
+            fontWeight: FontWeight.bold,
+          ),
         ),
         actions: [
           CustomIcon(
@@ -30,7 +39,7 @@ class CategoriesScreen extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,10 +51,10 @@ class CategoriesScreen extends StatelessWidget {
               CustomTextWidget(
                 text: 'Choose Categories',
                 color: MyColors.grey,
-                fontSize: 12,
+                fontSize: 12.0,
               ),
               SizedBox(
-                height: 10,
+                height: 10.0,
               ),
               CustomTextWidget(
                 text: 'Tops',
@@ -54,7 +63,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Shirts',
@@ -63,7 +72,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Knitwears',
@@ -72,7 +81,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'T Shirts',
@@ -81,7 +90,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Hoddies',
@@ -90,7 +99,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Sandos',
@@ -99,7 +108,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Shorts',
@@ -108,7 +117,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Jens',
@@ -117,7 +126,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Pants',
@@ -126,7 +135,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Wedding Dress',
@@ -135,7 +144,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Party Dress',
@@ -144,7 +153,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               Divider(),
               SizedBox(
-                height: 5,
+                height: 5.0,
               ),
               CustomTextWidget(
                 text: 'Dress',
@@ -157,11 +166,12 @@ class CategoriesScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -189,38 +199,39 @@ class CategoriesScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 3.0, horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shoping',
                     color: MyColors.red,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

@@ -1,10 +1,12 @@
 import 'package:e_commers_project/utils/image.dart';
 
 import 'package:e_commers_project/view/components/custom_button.dart';
+import 'package:e_commers_project/view/payment_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/constant.dart';
 import '../utils/custom_widget.dart';
+import 'address_screen.dart';
 import 'components/add_details_widget.dart';
 
 class CheckoutScreen extends StatelessWidget {
@@ -31,20 +33,27 @@ class CheckoutScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10.0),
               child: CustomTextWidget(
                 text: 'Shopping Adress',
                 fontWeight: FontWeight.bold,
               ),
             ),
-            DetailCard2(
-              text1: 'Jone Doe',
-              text2: '3 New Bridge Court',
-              text3: 'Chino hille, United State',
-              hieght: 100,
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => AdressScreen())));
+              },
+              child: DetailCard2(
+                text1: 'Jone Doe',
+                text2: '3 New Bridge Court',
+                text3: 'Chino hille, United State',
+                hieght: 100.0,
+              ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
               child: Row(
                 children: [
                   CustomTextWidget(
@@ -52,32 +61,42 @@ class CheckoutScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                   Spacer(),
-                  CustomTextWidget(
-                    text: 'Change',
-                    fontWeight: FontWeight.bold,
-                    color: MyColors.red,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => PaymentScreen())));
+                    },
+                    child: CustomTextWidget(
+                      text: 'Change',
+                      fontWeight: FontWeight.bold,
+                      color: MyColors.red,
+                    ),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
               child: Row(
                 children: [
                   CustomImageContainer(
                     imageUrl: logo,
-                    height: 30,
-                    width: 30,
+                    height: 30.0,
+                    width: 30.0,
                   ),
                   SizedBox(
-                    width: 15,
+                    width: 15.0,
                   ),
                   CustomTextWidget(text: '**** **** **** 6574 ')
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               child: CustomTextWidget(
                 text: 'Delivery Method',
                 fontWeight: FontWeight.bold,
@@ -85,33 +104,35 @@ class CheckoutScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomImageContainer(
                     imageUrl: delivery2,
                     fit: BoxFit.cover,
-                    height: 100,
-                    width: 100,
+                    height: 100.0,
+                    width: 100.0,
                   ),
                   CustomImageContainer(
                     imageUrl: delivery3,
                     fit: BoxFit.cover,
-                    height: 100,
-                    width: 100,
+                    height: 100.0,
+                    width: 100.0,
                   ),
                   CustomImageContainer(
                     imageUrl: delvery1,
                     fit: BoxFit.cover,
-                    height: 100,
-                    width: 100,
+                    height: 100.0,
+                    width: 100.0,
                   )
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               child: Row(
                 children: [
                   CustomTextWidget(
@@ -128,7 +149,8 @@ class CheckoutScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               child: Row(
                 children: [
                   CustomTextWidget(
@@ -145,7 +167,8 @@ class CheckoutScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               child: Row(
                 children: [
                   CustomTextWidget(

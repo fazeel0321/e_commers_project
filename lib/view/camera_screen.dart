@@ -1,3 +1,4 @@
+import 'package:e_commers_project/view/crop_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/constant.dart';
@@ -27,11 +28,17 @@ class CameraScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(children: [
-          CustomImageContainer(
-            imageUrl: girl2,
-            fit: BoxFit.cover,
-            height: 550,
-            width: MediaQuery.of(context).size.width,
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => CropScreen()));
+            },
+            child: CustomImageContainer(
+              imageUrl: girl2,
+              fit: BoxFit.cover,
+              height: 550.0,
+              width: MediaQuery.of(context).size.width,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),

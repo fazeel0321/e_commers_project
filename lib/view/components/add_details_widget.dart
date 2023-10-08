@@ -18,17 +18,17 @@ class AddDetails extends StatelessWidget {
       {this.text,
       this.text2,
       this.icon,
-      this.hieght = 60,
-      this.padh = 15,
-      this.size = 12});
+      this.hieght = 60.0,
+      this.padh = 15.0,
+      this.size = 12.0});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: padh, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: padh, vertical: 10.0),
       child: CustomContainerWidget(
         child: Padding(
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -37,7 +37,7 @@ class AddDetails extends StatelessWidget {
                 color: MyColors.grey,
               ),
               SizedBox(
-                height: 10,
+                height: 10.0,
               ),
               Row(
                 children: [
@@ -59,7 +59,7 @@ class AddDetails extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         color: MyColors.white,
         bcolor: MyColors.white,
-        circular: 10,
+        circular: 10.0,
       ),
     );
   }
@@ -71,15 +71,15 @@ class AddDetail2 extends StatelessWidget {
   var icon;
   var hieght;
   var padh;
-  AddDetail2({this.text, this.icon, this.hieght = 60, this.padh = 15});
+  AddDetail2({this.text, this.icon, this.hieght = 60.0, this.padh = 15.0});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: padh, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: padh, vertical: 10.0),
       child: CustomContainerWidget(
         child: Padding(
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -94,7 +94,7 @@ class AddDetail2 extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         color: MyColors.white,
         bcolor: MyColors.white,
-        circular: 10,
+        circular: 10.0,
       ),
     );
   }
@@ -111,22 +111,22 @@ class DetailCard extends StatelessWidget {
       {this.text1,
       this.text2,
       this.text3,
-      this.hieght = 110,
+      this.hieght = 110.0,
       this.icolor = MyColors.black,
       this.text4});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
       child: CustomContainerWidget(
           height: hieght,
           width: MediaQuery.of(context).size.width,
           color: MyColors.white,
           bcolor: MyColors.white,
-          circular: 10,
+          circular: 10.0,
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -155,20 +155,20 @@ class DetailCard extends StatelessWidget {
                   children: [
                     CustomContainerWidget(
                       bcolor: MyColors.black,
-                      height: 20,
-                      width: 20,
+                      height: 20.0,
+                      width: 20.0,
                       color: MyColors.black,
-                      circular: 5,
+                      circular: 5.0,
                       child: Center(
                         child: CustomIcon(
                           icon: Icons.done,
-                          Size: 12,
+                          Size: 12.0,
                           color: MyColors.white,
                         ),
                       ),
                     ),
                     SizedBox(
-                      width: 10,
+                      width: 10.0,
                     ),
                     CustomTextWidget(text: text4),
                   ],
@@ -191,22 +191,22 @@ class DetailCard2 extends StatelessWidget {
     this.text1,
     this.text2,
     this.text3,
-    this.hieght = 110,
+    this.hieght = 110.0,
     this.icolor = MyColors.black,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
       child: CustomContainerWidget(
           height: hieght,
           width: MediaQuery.of(context).size.width,
           color: MyColors.white,
           bcolor: MyColors.white,
-          circular: 10,
+          circular: 10.0,
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -221,15 +221,15 @@ class DetailCard2 extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 5.0,
                 ),
                 CustomTextWidget(text: text2),
                 SizedBox(
-                  height: 5,
+                  height: 5.0,
                 ),
                 CustomTextWidget(text: text3),
                 SizedBox(
-                  height: 5,
+                  height: 5.0,
                 ),
               ],
             ),

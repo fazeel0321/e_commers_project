@@ -33,7 +33,8 @@ class CategoriesSecondScreen extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -57,19 +58,20 @@ class CategoriesSecondScreen extends StatelessWidget {
               CustomContainerWidget(
                 child: Row(children: [Divider()]),
                 color: MyColors.red,
-                height: 3,
-                width: 100,
+                height: 3.0,
+                width: 10.00,
                 bcolor: MyColors.red,
                 circular: 3,
               )
             ],
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
             child: CustomContainerWidget(
-                height: 90,
+                height: 90.0,
                 width: MediaQuery.of(context).size.width,
-                circular: 20,
+                circular: 20.0,
                 color: MyColors.red,
                 bcolor: MyColors.red,
                 child: Center(
@@ -80,7 +82,7 @@ class CategoriesSecondScreen extends StatelessWidget {
                         text: 'Summar Sale',
                         color: MyColors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 20.0,
                       ),
                       CustomTextWidget(
                         text: 'Up to 50% off',
@@ -110,11 +112,12 @@ class CategoriesSecondScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70.0,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, right: 15, left: 10),
+              padding:
+                  const EdgeInsets.only(top: 10.0, right: 15.0, left: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -142,38 +145,39 @@ class CategoriesSecondScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 8),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 3.0, horizontal: 8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomTextWidget(
                     text: 'Home',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Shoping',
                     color: MyColors.red,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Bag',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Favroite',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                   CustomTextWidget(
                     text: 'Profile',
                     color: MyColors.grey,
-                    fontSize: 15,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.w500,
                   ),
                 ],

@@ -47,7 +47,7 @@ class CustomContainerWidget extends StatelessWidget {
       this.width = 100.0,
       this.height = 100.0,
       this.bcolor,
-      this.bwidth = 1,
+      this.bwidth = 1.0,
       // this.networkImage,
       this.circular});
 

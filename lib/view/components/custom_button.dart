@@ -17,14 +17,14 @@ class CustomButton extends StatelessWidget {
   var width;
   CustomButton(
       {required this.text,
-      this.padh = 10,
-      this.padv = 20,
+      this.padh = 10.0,
+      this.padv = 20.0,
       this.color = MyColors.red,
       this.bcolor = MyColors.red,
       this.fontsize,
       this.tcolor = MyColors.white,
-      this.hieght = 40,
-      this.width = 70});
+      this.hieght = 40.0,
+      this.width = 70.0});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class CustomButton extends StatelessWidget {
         ),
         height: hieght,
         width: width,
-        circular: 30,
+        circular: 30.0,
         color: color,
         bcolor: bcolor,
       ),
@@ -57,11 +57,11 @@ class TextSizeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomContainerWidget(
       child: Center(child: CustomTextWidget(text: text)),
-      circular: 10,
+      circular: 10.0,
       color: MyColors.white,
       bcolor: MyColors.black,
-      height: 40,
-      width: 100,
+      height: 40.0,
+      width: 100.0,
     );
   }
 }

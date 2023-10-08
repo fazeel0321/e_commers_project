@@ -15,10 +15,10 @@ class BagAddItem extends StatelessWidget {
   var sizetext;
   var price;
   BagAddItem(
-      {this.chieght = 120,
+      {this.chieght = 120.0,
       this.colortext,
       this.ctext,
-      this.ehieght = 120,
+      this.ehieght = 120.0,
       this.ftext,
       this.image,
       this.sizetext,
@@ -28,33 +28,33 @@ class BagAddItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20),
+      padding: const EdgeInsets.symmetric(vertical: 20.0),
       child: Row(
         children: [
           CustomImageContainer(
             imageUrl: image,
             fit: BoxFit.cover,
             height: chieght,
-            width: MediaQuery.of(context).size.width / 3,
+            width: MediaQuery.of(context).size.width / 3.0,
           ),
           Expanded(
             child: CustomContainerWidget(
                 height: ehieght,
                 color: MyColors.white,
                 bcolor: MyColors.white,
-                circular: 10,
+                circular: 10.0,
                 // width: MediaQuery.of(context).size.width / 2,
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 5),
+                          horizontal: 10.0, vertical: 5.0),
                       child: Row(
                         children: [
                           CustomTextWidget(
                             text: ftext,
                             fontWeight: FontWeight.bold,
-                            fontSize: 14,
+                            fontSize: 14.0,
                             fontfamily: 'Medium',
                           ),
                           Spacer(),
@@ -67,42 +67,42 @@ class BagAddItem extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 10,
+                        horizontal: 10.0,
                       ),
                       child: Row(
                         children: [
                           CustomTextWidget(
                             text: ctext,
-                            fontSize: 10,
+                            fontSize: 10.0,
                             fontWeight: FontWeight.bold,
                             color: MyColors.grey,
                             fontfamily: 'Medium',
                           ),
                           SizedBox(
-                            width: 5,
+                            width: 5.0,
                           ),
                           CustomTextWidget(
                             text: colortext,
-                            fontSize: 10,
+                            fontSize: 10.0,
                             fontWeight: FontWeight.bold,
                             fontfamily: 'Medium',
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 10.0,
                           ),
                           CustomTextWidget(
                             text: stext,
-                            fontSize: 10,
+                            fontSize: 10.0,
                             fontWeight: FontWeight.bold,
                             color: MyColors.grey,
                             fontfamily: 'Medium',
                           ),
                           SizedBox(
-                            width: 5,
+                            width: 5.0,
                           ),
                           CustomTextWidget(
                             text: sizetext,
-                            fontSize: 10,
+                            fontSize: 10.0,
                             fontWeight: FontWeight.bold,
                             fontfamily: 'Medium',
                           ),
@@ -111,7 +111,7 @@ class BagAddItem extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 10),
+                          horizontal: 20.0, vertical: 10.0),
                       child: Row(
                         children: [
                           CircleAvatar(
@@ -119,15 +119,15 @@ class BagAddItem extends StatelessWidget {
                             child: CustomIcon(
                               icon: Icons.add,
                               color: MyColors.black,
-                              Size: 15,
+                              Size: 15.0,
                             ),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 10.0,
                           ),
                           CustomTextWidget(text: '1'),
                           SizedBox(
-                            width: 10,
+                            width: 10.0,
                           ),
                           CircleAvatar(
                             backgroundColor: Color.fromARGB(255, 219, 215, 203),
@@ -135,7 +135,7 @@ class BagAddItem extends StatelessWidget {
                               child: CustomIcon(
                                 icon: Icons.minimize,
                                 color: MyColors.black,
-                                Size: 18,
+                                Size: 18.0,
                               ),
                             ),
                           ),
@@ -164,8 +164,8 @@ class ItemSeasonCard extends StatelessWidget {
   var ltext;
   var timetext;
   ItemSeasonCard(
-      {this.chieght = 80,
-      this.ehieght = 80,
+      {this.chieght = 80.0,
+      this.ehieght = 80.0,
       this.image,
       this.utext,
       this.ltext,
@@ -174,46 +174,46 @@ class ItemSeasonCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
       child: Row(
         children: [
           CustomImageContainer(
             imageUrl: image,
             fit: BoxFit.cover,
             height: chieght,
-            width: MediaQuery.of(context).size.width / 3,
+            width: MediaQuery.of(context).size.width / 3.0,
           ),
           Expanded(
             child: CustomContainerWidget(
                 height: ehieght,
                 color: MyColors.white,
                 bcolor: MyColors.white,
-                circular: 10,
+                circular: 10.0,
                 // width: MediaQuery.of(context).size.width / 2,
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 5),
+                          horizontal: 10.0, vertical: 5.0),
                       child: Row(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 5),
+                            padding: const EdgeInsets.symmetric(vertical: 5.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomTextWidget(
                                   text: utext,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 14,
+                                  fontSize: 14.0,
                                 ),
                                 SizedBox(
-                                  height: 5,
+                                  height: 5.0,
                                 ),
                                 CustomTextWidget(
                                   text: ltext,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 12,
+                                  fontSize: 12.0,
                                 ),
                               ],
                             ),
@@ -221,16 +221,16 @@ class ItemSeasonCard extends StatelessWidget {
                           Spacer(),
                           Padding(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 5, vertical: 5),
+                                horizontal: 5.0, vertical: 5.0),
                             child: Column(
                               children: [
                                 CustomTextWidget(
                                   text: timetext,
                                   color: MyColors.grey,
-                                  fontSize: 10,
+                                  fontSize: 10.0,
                                 ),
                                 SizedBox(
-                                  height: 5,
+                                  height: 5.0,
                                 ),
                                 CustomContainerWidget(
                                   child: Center(
@@ -238,9 +238,9 @@ class ItemSeasonCard extends StatelessWidget {
                                     text: 'Apply',
                                     color: MyColors.white,
                                   )),
-                                  height: 40,
-                                  width: 70,
-                                  circular: 20,
+                                  height: 40.0,
+                                  width: 70.0,
+                                  circular: 20.0,
                                   color: MyColors.red,
                                   bcolor: MyColors.red,
                                 )
@@ -284,18 +284,18 @@ class PriceRatingContainer extends StatelessWidget {
           clipBehavior: Clip.none,
           children: [
             Container(
-              width: 170,
-              height: 200,
+              width: 170.0,
+              height: 200.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
                     image: NetworkImage(imageurl),
                     fit: BoxFit.cover,
                   )),
             ),
             Positioned(
-              bottom: -15,
-              right: -15,
+              bottom: -15.0,
+              right: -15.0,
               child: CircleAvatar(
                 child: CustomIcon(
                   icon: Icons.favorite_border,
@@ -305,8 +305,8 @@ class PriceRatingContainer extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 10,
-              left: 15,
+              top: 10.0,
+              left: 15.0,
               child: CustomContainerWidget(
                 child: Center(
                   child: CustomTextWidget(
@@ -314,10 +314,10 @@ class PriceRatingContainer extends StatelessWidget {
                     color: MyColors.white,
                   ),
                 ),
-                height: 20,
-                width: 50,
+                height: 20.0,
+                width: 50.0,
                 color: MyColors.red,
-                circular: 30,
+                circular: 30.0,
                 bcolor: MyColors.white,
               ),
             ),
@@ -329,32 +329,32 @@ class PriceRatingContainer extends StatelessWidget {
             CustomIcon(
               icon: Icons.star,
               color: MyColors.yellow,
-              Size: 13,
+              Size: 13.0,
             ),
             CustomIcon(
               icon: Icons.star,
-              Size: 13,
+              Size: 13.0,
               color: MyColors.yellow,
             ),
             CustomIcon(
               icon: Icons.star,
-              Size: 13,
+              Size: 13.0,
               color: MyColors.yellow,
             ),
             CustomIcon(
               icon: Icons.star,
-              Size: 13,
+              Size: 13.0,
               color: MyColors.yellow,
             ),
             CustomIcon(
               icon: Icons.star,
-              Size: 13,
+              Size: 13.0,
               color: MyColors.yellow,
             ),
             CustomTextWidget(
               text: rate,
               color: MyColors.grey,
-              fontSize: 10,
+              fontSize: 10.0,
             )
           ],
         ),
@@ -364,12 +364,12 @@ class PriceRatingContainer extends StatelessWidget {
             CustomTextWidget(
               text: text,
               color: MyColors.grey,
-              fontSize: 10,
+              fontSize: 10.0,
             ),
             CustomTextWidget(
               text: text1,
               color: MyColors.black,
-              fontSize: 15,
+              fontSize: 15.0,
               fontWeight: FontWeight.bold,
             )
           ],
@@ -379,16 +379,16 @@ class PriceRatingContainer extends StatelessWidget {
             CustomTextWidget(
               text: price,
               color: MyColors.grey,
-              fontSize: 15,
+              fontSize: 15.0,
               fontWeight: FontWeight.bold,
             ),
             SizedBox(
-              width: 10,
+              width: 10.0,
             ),
             CustomTextWidget(
               text: discountprice,
               color: MyColors.black,
-              fontSize: 15,
+              fontSize: 15.0,
               fontWeight: FontWeight.bold,
             )
           ],
@@ -406,7 +406,7 @@ class ImageItemContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Padding(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -417,19 +417,19 @@ class ImageItemContainer extends StatelessWidget {
                   color: MyColors.white,
                 ),
               ),
-              height: 20,
-              width: 50,
+              height: 20.0,
+              width: 50.0,
               color: MyColors.grey,
-              circular: 30,
+              circular: 30.0,
               bcolor: MyColors.white,
             ),
           ],
         ),
       ),
-      width: 170,
-      height: 200,
+      width: 170.0,
+      height: 200.0,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(10.0),
           image: DecorationImage(
             image: NetworkImage(imageurl),
             fit: BoxFit.cover,
@@ -446,34 +446,34 @@ class AddImageText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
       child: Row(
         children: [
           Expanded(
             child: Container(
-              height: 70,
+              height: 70.0,
               child: Center(
                   child: CustomTextWidget(
                 text: text,
-                fontSize: 15,
+                fontSize: 15.0,
                 fontWeight: FontWeight.bold,
               )),
               decoration: BoxDecoration(
                   color: MyColors.white,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      bottomLeft: Radius.circular(15))),
+                      topLeft: Radius.circular(15.0),
+                      bottomLeft: Radius.circular(15.0))),
             ),
           ),
           Expanded(
             child: Container(
-              height: 70,
+              height: 70.0,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: NetworkImage(image), fit: BoxFit.cover),
                   borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(15),
-                      bottomRight: Radius.circular(15))),
+                      topRight: Radius.circular(15.0),
+                      bottomRight: Radius.circular(15.0))),
             ),
           ),
         ],
@@ -493,71 +493,71 @@ class WomenItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
       child: Row(
         children: [
           CustomImageContainer(
             imageUrl: imageurl,
             fit: BoxFit.cover,
-            height: 90,
-            width: MediaQuery.of(context).size.width / 3,
+            height: 90.0,
+            width: MediaQuery.of(context).size.width / 3.0,
           ),
           Stack(
             clipBehavior: Clip.none,
             children: [
               CustomContainerWidget(
-                  height: 90,
+                  height: 90.0,
                   color: MyColors.white,
                   bcolor: MyColors.white,
-                  circular: 10,
+                  circular: 10.0,
                   width: MediaQuery.of(context).size.width * 0.50,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 10),
+                        horizontal: 10.0, vertical: 10.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CustomTextWidget(
                           text: text1,
                           fontWeight: FontWeight.bold,
-                          fontSize: 15,
+                          fontSize: 15.0,
                         ),
                         CustomTextWidget(
                           text: text2,
                           color: MyColors.grey,
-                          fontSize: 12,
+                          fontSize: 12.0,
                         ),
                         Row(
                           children: [
                             Icon(
                               Icons.star,
                               color: Colors.yellow,
-                              size: 12,
+                              size: 12.0,
                             ),
                             Icon(
-                              size: 12,
+                              size: 12.0,
                               Icons.star,
                               color: Colors.yellow,
                             ),
                             Icon(
-                              size: 12,
+                              size: 12.0,
                               Icons.star,
                               color: Colors.yellow,
                             ),
                             Icon(
-                              size: 12,
+                              size: 12.0,
                               Icons.star,
                               color: Colors.yellow,
                             ),
                             Icon(
-                              size: 12,
+                              size: 12.0,
                               Icons.star_border,
                               color: Colors.grey,
                             ),
                             CustomTextWidget(
                               text: '(4)',
                               color: Colors.grey,
-                              fontSize: 12,
+                              fontSize: 12.0,
                             )
                           ],
                         ),
@@ -569,8 +569,8 @@ class WomenItemCard extends StatelessWidget {
                     ),
                   )),
               Positioned(
-                bottom: -12,
-                right: -12,
+                bottom: -12.0,
+                right: -12.0,
                 child: CircleAvatar(
                   backgroundColor: MyColors.white,
                   child: Icon(

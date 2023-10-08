@@ -1,5 +1,6 @@
 import 'package:e_commers_project/utils/image.dart';
 import 'package:e_commers_project/view/components/custom_button.dart';
+import 'package:e_commers_project/view/continue_shopping_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/constant.dart';
@@ -21,35 +22,43 @@ class SuccessScreen extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 50),
+                  padding: const EdgeInsets.only(top: 50.0),
                   child: CustomTextWidget(
                     text: 'Success!',
                     fontWeight: FontWeight.bold,
                     fontfamily: 'bold',
-                    fontSize: 30,
+                    fontSize: 30.0,
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 10.0,
                 ),
                 CustomTextWidget(
                   text: 'Your order will be delivered soon,',
                   fontWeight: FontWeight.bold,
-                  fontSize: 12,
+                  fontSize: 12.0,
                   color: MyColors.grey,
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 5.0,
                 ),
                 CustomTextWidget(
                   text: 'Thank you for chossing our app!',
                   fontWeight: FontWeight.bold,
-                  fontSize: 12,
+                  fontSize: 12.0,
                   color: MyColors.grey,
                 ),
-                CustomButton(
-                  text: 'Continue Shopping',
-                  width: 200,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => ContinueScreen())));
+                  },
+                  child: CustomButton(
+                    text: 'Continue Shopping',
+                    width: 200.0,
+                  ),
                 )
               ],
             ),

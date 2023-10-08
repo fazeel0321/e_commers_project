@@ -1,3 +1,4 @@
+import 'package:e_commers_project/view/adding_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/constant.dart';
@@ -25,12 +26,18 @@ class AdressScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          DetailCard(
-            text1: 'Jone Doe',
-            text2: '3 New Bridge Court',
-            text3: 'Chino hille, United State',
-            text4: 'Use as the shipping address',
-            hieght: 130,
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => AddingScreen())));
+            },
+            child: DetailCard(
+              text1: 'Jone Doe',
+              text2: '3 New Bridge Court',
+              text3: 'Chino hille, United State',
+              text4: 'Use as the shipping address',
+              hieght: 130,
+            ),
           ),
           DetailCard(
             text1: 'Jone Doe',
